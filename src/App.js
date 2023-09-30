@@ -5,7 +5,7 @@ import Home from './routes/Home';
 const App = () => {
 
   return (
-    <Router>
+    <Router basename='/dynamic-grid-app'>
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Add more routes... */}
