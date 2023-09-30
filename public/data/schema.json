@@ -1,0 +1,230 @@
+{
+    "screens": {
+      "/": {
+        "id": 1,
+        "title": "home",
+        "components": [
+          {
+            "id": "101",
+            "type": "grid",
+            "props": {
+              "title": "Grid One",
+              "rows": 3,
+              "columns": 3,
+              "items": [
+                {
+                  "id": 1001,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1 1",
+                    "description": "Description"
+                  }
+                },
+                {
+                  "id": 1002,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1 1",
+                    "description": "Description"
+                  }
+                },
+                {
+                  "id": 1003,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1 1",
+                    "description": "Description"
+                  }
+                },
+                {
+                  "id": 1004,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1 1",
+                    "description": "Description"
+                  }
+                },
+                {
+                  "id": 1005,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1",
+                    "description": "Description for ItemVariant1"
+                  }
+                },
+                {
+                  "id": 1006,
+                  "type": "ItemVariant2",
+                  "props": {
+                    "redirectType": "route",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant2",
+                    "description": "Description for ItemVariant2"
+                  }
+                },
+                {
+                  "id": 1007,
+                  "type": "ItemVariant2",
+                  "props": {
+                    "redirectType": "route",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant2",
+                    "description": "Description for ItemVariant2"
+                  }
+                },
+                {
+                  "id": 1008,
+                  "type": "ItemVariant2",
+                  "props": {
+                    "redirectType": "route",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant2",
+                    "description": "Description for ItemVariant2"
+                  }
+                },
+                {
+                  "id": 1009,
+                  "type": "ItemVariant2",
+                  "props": {
+                    "redirectType": "route",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant2",
+                    "description": "Description for ItemVariant2"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "101",
+            "type": "grid",
+            "props": {
+              "title": "Grid Two",
+              "rows": 3,
+              "columns": 3,
+              "items": [
+                {
+                  "id": 1001,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1 1",
+                    "description": "Description"
+                  }
+                },
+                {
+                  "id": 1002,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1 1",
+                    "description": "Description"
+                  }
+                },
+                {
+                  "id": 1003,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1 1",
+                    "description": "Description"
+                  }
+                },
+                {
+                  "id": 1004,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1 1",
+                    "description": "Description"
+                  }
+                },
+                {
+                  "id": 1005,
+                  "type": "ItemVariant1",
+                  "props": {
+                    "redirectType": "tab",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant1",
+                    "description": "Description for ItemVariant1"
+                  }
+                },
+                {
+                  "id": 1006,
+                  "type": "ItemVariant2",
+                  "props": {
+                    "redirectType": "route",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant2",
+                    "description": "Description for ItemVariant2"
+                  }
+                },
+                {
+                  "id": 1007,
+                  "type": "ItemVariant2",
+                  "props": {
+                    "redirectType": "route",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant2",
+                    "description": "Description for ItemVariant2"
+                  }
+                },
+                {
+                  "id": 1008,
+                  "type": "ItemVariant2",
+                  "props": {
+                    "redirectType": "route",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant2",
+                    "description": "Description for ItemVariant2"
+                  }
+                },
+                {
+                  "id": 1009,
+                  "type": "ItemVariant2",
+                  "props": {
+                    "redirectType": "route",
+                    "redirectConfig": "https://example.com",
+                    "image": "https://picsum.photos/200",
+                    "title": "ItemVariant2",
+                    "description": "Description for ItemVariant2"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }

@@ -1,0 +1,16 @@
+/* Add these styles to your CSS file or component */
+  
+  .item-image {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  .item-title {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .item-description {
+    font-size: 14px;
+    color: #666;
+  }
