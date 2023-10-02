@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dynamic-grid-app/static/css/main.e83a1f41.css",
-    "main.js": "/dynamic-grid-app/static/js/main.0ae0b49d.js",
+    "main.css": "/dynamic-grid-app/static/css/main.00a5db1e.css",
+    "main.js": "/dynamic-grid-app/static/js/main.fb7a6f74.js",
     "static/js/787.5b17e268.chunk.js": "/dynamic-grid-app/static/js/787.5b17e268.chunk.js",
     "index.html": "/dynamic-grid-app/index.html",
-    "main.e83a1f41.css.map": "/dynamic-grid-app/static/css/main.e83a1f41.css.map",
-    "main.0ae0b49d.js.map": "/dynamic-grid-app/static/js/main.0ae0b49d.js.map",
+    "main.00a5db1e.css.map": "/dynamic-grid-app/static/css/main.00a5db1e.css.map",
+    "main.fb7a6f74.js.map": "/dynamic-grid-app/static/js/main.fb7a6f74.js.map",
     "787.5b17e268.chunk.js.map": "/dynamic-grid-app/static/js/787.5b17e268.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e83a1f41.css",
-    "static/js/main.0ae0b49d.js"
+    "static/css/main.00a5db1e.css",
+    "static/js/main.fb7a6f74.js"
   ]
 }
