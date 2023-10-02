@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
+import RedirectPage from './routes/RedirectPage';
 
 const App = () => {
 
@@ -8,6 +9,7 @@ const App = () => {
     <Router basename='/dynamic-grid-app'>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/redirectedPath" element={<RedirectPage/>} />
         {/* Add more routes... */}
       </Routes>
     </Router>

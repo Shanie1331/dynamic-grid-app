@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+# Technical Documentation for dynamic-grid-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Build a React app optimized for mobile view with the following features:
 
-## Available Scripts
+1. **Schema-Driven UI:**
+   - The UI is driven by a configuration schema.
+   - The configuration is fetched from the backend (`BE`), `AppConfig`, or `RemoteConfig`.
 
-In the project directory, you can run:
+2. **Configuration Source:**
+   - The configuration is initially fetched from one of the following sources: backend (`BE`), `AppConfig`, or `RemoteConfig`.
+   - A static JSON file is used for configuration during development.
 
-### `npm start`
+3. **Dynamic Grid Component Implementation:**
+   - The app includes a dynamic grid component.
+   - The grid has configurable rows (`x`) and columns (`y`).
+   - The UI is designed to accommodate `x * y` items.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. **Grid Item Component:**
+   - The grid items are represented by a `GridItem` component.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. **Item Component Variants:**
+   - The `GridItem` component has multiple variants to display different types of content.
 
-### `npm test`
+6. **Redirection Configuration:**
+   - Each item variant has redirection configurations.
+   - On click, it can navigate to a new tab or a new route/screen within the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7. **Dynamic Variant Change:**
+   - The variant of the `GridItem` component can be changed dynamically.
 
-### `npm run build`
+## Table of Contents
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Technical Documentation for dynamic-grid-app](#technical-documentation-for-dynamic-grid-app)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+      - [React Version : 18](#react-version--18)
+      - [Node Version : 18](#node-version--18)
+          - [--\> Added .nvmrc file you can use Node Version Manager](#---added-nvmrc-file-you-can-use-node-version-manager)
+      - [Test Driven Development Knowledge](#test-driven-development-knowledge)
+  - [Installation](#installation)
+  - [Folder Structure](#folder-structure)
+  - [Configuration](#configuration)
+  - [Deployment](#deployment)
+  - [Components](#components)
+  - [Styling](#styling)
+  - [API Integration](#api-integration)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### React Version : 18
 
-### `npm run eject`
+#### Node Version : 18
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+###### --> Added .nvmrc file you can use Node Version Manager
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Test Driven Development Knowledge
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Provide step-by-step instructions on how to set up the development environment and install dependencies.
 
-## Learn More
+```bash
+# Clone the repository
+git clone <repository-url>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Change into the project directory
+cd <project-directory>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Install dependencies
+npm install
 
-### Code Splitting
+# Runs the app in the development mode.\
+# Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Builds the app for production to the `build` folder.\
+npm run build
+```
 
-### Analyzing the Bundle Size
+## Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+project-root/
+  ├── public/
+  │   ├── index.html
+  │   ├── data
+  │   │   ├── schema.json 
+  ├── src/
+  │   ├── components/
+  │   ├── routes/
+  │   ├── App.js
+  │   ├── ElementMapper.js (A HOC Mapper that imports and returns the dynamic components)
+  │   └── index.js
+  ├── .gitignore
+  ├── .nvmrc
+  ├── package.json
+  └── README.md
+```
 
-### Making a Progressive Web App
+## Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The `schema.json` is placed at the `public/data`. The JSON is responsible for dynamic components behavior and render behavior.
 
-### Advanced Configuration
+```bash
+"screens": { # Schema for all the screens
+    "/": {
+      "id": 1,
+      "title": "home", # Name of the screen
+      "components": [ # List of Component
+        {
+          "id": "101", # key of Grid Component
+          "type": "grid", # Name of Grid Component
+          "props": {
+            "title": "Grid One", # Title of Grid Component
+            "rows": 3, # Number of rows for Component
+            "columns": 3, # Number of cols for Component
+            "items": [
+                {
+                    "id": 1001, # key of Item Component
+                    "type": "ItemVariant1", # Name of Item Component ItemVariant1/ItemVariant2
+                    "props": {
+                        "redirectType": "tab", # type of redirection route/tab
+                        "redirectConfig": "https://example.com", # path for redirection
+                        "image": "https://picsum.photos/200", # path for image
+                        "title": "ItemVariant1 1", # title for grid Item
+                        "description": "Description" # description for grid Item
+                    }
+                }
+            ]
+          }
+        }
+      ]
+    }
+  }
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Deployment
 
-### Deployment
+```bash
+# Pre-deployment script
+npm run predeploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# deployment script to deploy it to github pages
+npm run deploy
+```
 
-### `npm run build` fails to minify
+## Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Grid Component
+Grid Item Component
+Item Variant 1 (for Grid Item Component)
+Item Variant 2 (for Grid Item Component)
+
+## Styling
+
+For now we are just using global styles.css
+
+## API Integration
+
+We are using static JSON for now.

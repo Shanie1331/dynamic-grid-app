@@ -72,7 +72,7 @@
                 "type": "ItemVariant2",
                 "props": {
                   "redirectType": "route",
-                  "redirectConfig": "https://example.com",
+                  "redirectConfig": "redirectedPath",
                   "image": "https://picsum.photos/200",
                   "title": "ItemVariant2",
                   "description": "Description for ItemVariant2"
@@ -83,7 +83,7 @@
                 "type": "ItemVariant2",
                 "props": {
                   "redirectType": "route",
-                  "redirectConfig": "https://example.com",
+                  "redirectConfig": "redirectedPath",
                   "image": "https://picsum.photos/200",
                   "title": "ItemVariant2",
                   "description": "Description for ItemVariant2"
@@ -94,7 +94,7 @@
                 "type": "ItemVariant2",
                 "props": {
                   "redirectType": "route",
-                  "redirectConfig": "https://example.com",
+                  "redirectConfig": "redirectedPath",
                   "image": "https://picsum.photos/200",
                   "title": "ItemVariant2",
                   "description": "Description for ItemVariant2"
@@ -105,7 +105,7 @@
                 "type": "ItemVariant2",
                 "props": {
                   "redirectType": "route",
-                  "redirectConfig": "https://example.com",
+                  "redirectConfig": "redirectedPath",
                   "image": "https://picsum.photos/200",
                   "title": "ItemVariant2",
                   "description": "Description for ItemVariant2"
@@ -182,7 +182,7 @@
                 "type": "ItemVariant2",
                 "props": {
                   "redirectType": "route",
-                  "redirectConfig": "https://example.com",
+                  "redirectConfig": "redirectedPath",
                   "image": "https://picsum.photos/200",
                   "title": "ItemVariant2",
                   "description": "Description for ItemVariant2"
@@ -193,7 +193,7 @@
                 "type": "ItemVariant2",
                 "props": {
                   "redirectType": "route",
-                  "redirectConfig": "https://example.com",
+                  "redirectConfig": "redirectedPath",
                   "image": "https://picsum.photos/200",
                   "title": "ItemVariant2",
                   "description": "Description for ItemVariant2"
@@ -204,7 +204,7 @@
                 "type": "ItemVariant2",
                 "props": {
                   "redirectType": "route",
-                  "redirectConfig": "https://example.com",
+                  "redirectConfig": "redirectedPath",
                   "image": "https://picsum.photos/200",
                   "title": "ItemVariant2",
                   "description": "Description for ItemVariant2"
@@ -215,7 +215,7 @@
                 "type": "ItemVariant2",
                 "props": {
                   "redirectType": "route",
-                  "redirectConfig": "https://example.com",
+                  "redirectConfig": "redirectedPath",
                   "image": "https://picsum.photos/200",
                   "title": "ItemVariant2",
                   "description": "Description for ItemVariant2"

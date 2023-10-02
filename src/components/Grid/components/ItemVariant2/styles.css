@@ -1,9 +1,15 @@
 /* styles.css */
-
+.content-container {
+  border-left: black solid 0.5px;
+  border-right: black solid 0.5px;
+  border-bottom: black solid 0.5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+}
 .grid-item {
   position: relative;
-  border: 1px solid #ddd;
-  /* padding: 10px; */
+  padding: 10px;
   /* margin: 5px; */
   cursor: pointer;
   display: flex;

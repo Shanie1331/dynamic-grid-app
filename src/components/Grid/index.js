@@ -2,7 +2,7 @@ import React from "react";
 import GridItem from "./components/GridItem";
 
 const Grid = (props) => {
-  const { title, rows, columns, items } = props || {};
+  const { title, columns, items } = props || {};
   return (
     <>
       <div>
